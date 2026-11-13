@@ -115,6 +115,12 @@ node build.mjs
 npx wrangler pages deploy dist --project-name sitio-servicios --branch main
 ```
 
+### Vista previa temporal en GitHub Pages
+
+Mientras conectas Cloudflare, hay una copia en <https://robertofranco2873.github.io/sitio-servicios/>
+(rama `gh-pages`, generada a mano, **no se actualiza sola**). Cuando Cloudflare esté funcionando, apágala:
+repositorio → **Settings** → **Pages** → **Unpublish site**, y borra la rama `gh-pages`.
+
 ## Activar la analítica (Cloudflare Web Analytics)
 
 No usa cookies ni requiere banner de consentimiento.
@@ -134,6 +140,7 @@ No usa cookies ni requiere banner de consentimiento.
 
 ## Revisar calidad
 
-- Lighthouse: en Chrome abre la página → F12 → **Lighthouse** → *Mobile* → **Analyze page load**.
+- Rendimiento: <https://pagespeed.web.dev> con tu URL pública, pestaña *Mobile*. Es más confiable que
+  Lighthouse local en una computadora lenta, porque Lighthouse frena el CPU 4× adicional para simular un celular.
 - Datos estructurados: <https://search.google.com/test/rich-results> con tu URL.
 - Vista previa al compartir: <https://www.opengraph.xyz> con tu URL.

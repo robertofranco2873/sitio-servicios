@@ -50,7 +50,10 @@ export function plantilla(c, { css, js, url, anio }) {
       '@type': 'OfferCatalog',
       name: c.servicios.titulo,
       itemListElement: c.servicios.lista.map((s) => {
-        const precio = Number((s.precio.match(/[\d,]+/) || ['0'])[0].replace(/,/g, ''));
+        const [precio = 0, maximo] = (s.precio.match(/\d[\d,]*/g) || []).map((n) => Number(n.replace(/,/g, '')));
+        const spec = maximo
+          ? { minPrice: precio, maxPrice: maximo }
+          : s.desde ? { minPrice: precio } : { price: precio };
         return {
           '@type': 'Offer',
           name: s.nombre,
@@ -58,7 +61,7 @@ export function plantilla(c, { css, js, url, anio }) {
           priceSpecification: {
             '@type': 'PriceSpecification',
             priceCurrency: 'MXN',
-            ...(s.desde ? { minPrice: precio } : { price: precio }),
+            ...spec,
           },
         };
       }),

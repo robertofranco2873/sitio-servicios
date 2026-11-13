@@ -1,0 +1,14 @@
+{
+  "name": "sitio-servicios",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Página de servicios de Roberto Guerrero para negocios locales.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node herramientas/servidor.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

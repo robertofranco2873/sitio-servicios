@@ -1,0 +1,209 @@
+{
+  "_ayuda": "Edita este archivo para cambiar textos, precios y enlaces. Después ejecuta: node build.mjs (o deja que Cloudflare Pages lo haga al hacer push). Ver README.md.",
+
+  "sitio": {
+    "url": "https://sitio-servicios.pages.dev",
+    "idioma": "es-MX",
+    "titulo": "Roberto Guerrero | Sistemas para negocios en San Nicolás de los Garza y Monterrey",
+    "descripcion": "Sistemas sencillos para negocios locales en San Nicolás de los Garza y Monterrey: inventario, ventas, cotizaciones, órdenes y citas desde el celular. Diagnóstico gratis.",
+    "imagenCompartir": "assets/og-imagen.png",
+    "textoImagenCompartir": "Roberto Guerrero, sistemas para negocios en San Nicolás de los Garza y Monterrey"
+  },
+
+  "persona": {
+    "nombre": "Roberto Guerrero",
+    "nombreCorto": "Roberto",
+    "foto": "assets/foto-perfil.png",
+    "textoFoto": "Foto de Roberto Guerrero"
+  },
+
+  "whatsapp": {
+    "numero": "[NUMERO]",
+    "_ayudaNumero": "Solo dígitos, con código de país y sin espacios ni '+'. Ejemplo para Monterrey: 5281XXXXXXXX",
+    "mensaje": "Hola Roberto, vi tu página y me interesa el diagnóstico gratis para mi negocio de ___"
+  },
+
+  "analitica": {
+    "tokenCloudflare": "",
+    "_ayuda": "Opcional. Pega aquí el token de Cloudflare Web Analytics si no la activaste desde el panel de Pages. Vacío = no se agrega nada."
+  },
+
+  "encabezado": {
+    "titulo": "Roberto Guerrero | Sistemas para negocios en San Nicolás",
+    "subtitulo": "Controla tu inventario, ventas, órdenes y citas desde el celular, sin libretas ni Excel complicados.",
+    "botonWhatsapp": "Escríbeme por WhatsApp",
+    "botonDiagnostico": "Diagnóstico gratis"
+  },
+
+  "problema": {
+    "titulo": "¿Te suena alguna de estas?",
+    "situaciones": [
+      {
+        "titulo": "Se acaba un producto y te enteras cuando el cliente lo pide",
+        "texto": "El inventario vive en la cabeza de alguien o en una libreta, y los faltantes se descubren tarde."
+      },
+      {
+        "titulo": "Las cotizaciones tardan horas o días",
+        "texto": "Hay que buscar precios, hacer cuentas y armar el documento cada vez. Mientras, el cliente cotiza en otro lado."
+      },
+      {
+        "titulo": "Citas y entregas que se olvidan",
+        "texto": "Los pendientes están repartidos entre mensajes, papelitos y la memoria. Alguno siempre se pasa."
+      },
+      {
+        "titulo": "No sabes cuánto vendiste ni cuánto ganaste",
+        "texto": "Al final de la semana o del mes no hay un número claro, solo una idea aproximada."
+      }
+    ]
+  },
+
+  "servicios": {
+    "titulo": "Servicios y precios",
+    "nota": "Precios en pesos mexicanos. El precio final se acuerda por escrito antes de empezar y no cambia.",
+    "lista": [
+      {
+        "nombre": "Diagnóstico gratis",
+        "precio": "$0",
+        "desde": false,
+        "descripcion": "Platicamos 30 minutos sobre cómo trabaja tu negocio y te digo qué conviene ordenar primero. Sin compromiso.",
+        "incluye": []
+      },
+      {
+        "nombre": "Control básico",
+        "precio": "$2,500",
+        "desde": true,
+        "descripcion": "Un sistema en Google Sheets, usable desde el celular, para llevar inventario, ventas o citas.",
+        "incluye": [
+          "Hecho en Google Sheets, sin comprar programas",
+          "Funciona desde el celular",
+          "Capacitación para ti y tu equipo",
+          "1 mes de ajustes incluido"
+        ]
+      },
+      {
+        "nombre": "Sistema a la medida",
+        "precio": "$5,000",
+        "desde": true,
+        "descripcion": "Una aplicación web para tu forma de trabajar.",
+        "incluye": [
+          "Cotizaciones en minutos",
+          "Órdenes de trabajo y seguimiento",
+          "Inventario con alertas de faltantes",
+          "Tablero con ventas y resultados"
+        ]
+      },
+      {
+        "nombre": "Soporte mensual",
+        "precio": "$300 – $500 al mes",
+        "desde": false,
+        "descripcion": "Opcional. Ajustes, dudas y mantenimiento después de la entrega. Lo puedes cancelar cuando quieras.",
+        "incluye": []
+      }
+    ]
+  },
+
+  "demos": {
+    "titulo": "Ejemplos reales",
+    "intro": "Dos sistemas de ejemplo que puedes abrir y usar. Los datos son de prueba.",
+    "aviso": "La primera carga puede tardar un minuto porque el servidor gratuito se “despierta”.",
+    "boton": "Probar demo",
+    "lista": [
+      {
+        "nombre": "Taller",
+        "descripcion": "Cotizaciones, órdenes de trabajo, inventario de refacciones y tablero de resultados.",
+        "enlace": "https://demo-taller-ia.onrender.com",
+        "captura": "assets/capturas/demo-taller.svg",
+        "textoCaptura": "Captura del tablero del sistema de ejemplo para taller"
+      },
+      {
+        "nombre": "Comercio",
+        "descripcion": "Punto de venta, inventario con caducidades, reabastecimiento y reportes de ventas.",
+        "enlace": "https://demo-comercio-ia.onrender.com",
+        "captura": "assets/capturas/demo-comercio.svg",
+        "textoCaptura": "Captura del tablero del sistema de ejemplo para comercio"
+      }
+    ]
+  },
+
+  "proceso": {
+    "titulo": "Cómo trabajo",
+    "pasos": [
+      {
+        "titulo": "Diagnóstico gratis",
+        "texto": "Me cuentas cómo trabajas hoy. Si puedo ayudarte, te digo cómo; si no, también."
+      },
+      {
+        "titulo": "Propuesta con precio fijo",
+        "texto": "Te envío por escrito qué voy a hacer, cuánto cuesta y cuándo lo entrego. Sin sorpresas."
+      },
+      {
+        "titulo": "Entrega con capacitación",
+        "texto": "Lo dejamos funcionando con tus datos y te enseño a usarlo a ti y a tu equipo."
+      },
+      {
+        "titulo": "Soporte",
+        "texto": "Ajustes incluidos el primer mes. Después, soporte mensual solo si lo necesitas."
+      }
+    ]
+  },
+
+  "sobreMi": {
+    "titulo": "Sobre mí",
+    "parrafos": [
+      "Soy estudiante de último año de Ingeniería Industrial. He trabajado en producción y mejora continua en empresas manufactureras, donde aprendí a medir, ordenar procesos y quitar pasos que no sirven.",
+      "Por eso, antes de programar, entiendo cómo trabaja tu negocio. Un sistema solo vale la pena si te ahorra tiempo y te da números claros."
+    ]
+  },
+
+  "preguntas": {
+    "titulo": "Preguntas frecuentes",
+    "lista": [
+      {
+        "pregunta": "¿Necesito comprar algo?",
+        "respuesta": "No. El control básico usa Google Sheets, que es gratis con una cuenta de Google. Los sistemas a la medida se usan desde el navegador; si requieren algún servicio de pago, te lo digo antes en la propuesta."
+      },
+      {
+        "pregunta": "¿Funciona en mi celular?",
+        "respuesta": "Sí. Todo se diseña para usarse primero desde el celular, y también funciona en computadora o tableta."
+      },
+      {
+        "pregunta": "¿Qué pasa si necesito cambios?",
+        "respuesta": "El primer mes de ajustes está incluido. Después puedes contratar el soporte mensual o pedir cambios puntuales con precio acordado antes."
+      },
+      {
+        "pregunta": "¿Mis datos están seguros?",
+        "respuesta": "Tus datos quedan en tu propia cuenta (por ejemplo, tu Google Drive), con acceso solo para las personas que tú autorices. No los comparto ni los uso para nada más."
+      },
+      {
+        "pregunta": "¿Cuánto tarda?",
+        "respuesta": "Un control básico suele quedar en una o dos semanas. Un sistema a la medida, de tres a seis semanas según lo que incluya. La fecha queda por escrito en la propuesta."
+      }
+    ]
+  },
+
+  "contacto": {
+    "titulo": "Contacto",
+    "texto": "Escríbeme por WhatsApp y cuéntame a qué se dedica tu negocio. Te respondo en el horario de atención.",
+    "horario": [
+      { "dias": "Lunes a viernes", "horas": "18:00 – 21:00", "diasSchema": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "abre": "18:00", "cierra": "21:00" },
+      { "dias": "Sábado", "horas": "9:00 – 14:00", "diasSchema": ["Saturday"], "abre": "09:00", "cierra": "14:00" }
+    ],
+    "area": ["San Nicolás de los Garza", "Apodaca", "Escobedo", "Monterrey"],
+    "notaArea": "Atiendo en persona en estas zonas y en línea en cualquier lugar."
+  },
+
+  "testimonios": {
+    "_ayuda": "La sección aparece sola cuando agregas al menos un testimonio. Formato: { \"texto\": \"...\", \"nombre\": \"Nombre\", \"negocio\": \"Tipo de negocio, colonia\" }",
+    "titulo": "Lo que dicen mis clientes",
+    "lista": []
+  },
+
+  "pie": {
+    "enlaces": [
+      { "texto": "Servicios", "url": "#servicios" },
+      { "texto": "Ejemplos", "url": "#ejemplos" },
+      { "texto": "Preguntas", "url": "#preguntas" },
+      { "texto": "Contacto", "url": "#contacto" }
+    ]
+  }
+}

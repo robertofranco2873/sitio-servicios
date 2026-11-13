@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sitio-servicios.pages.dev/sitemap.xml

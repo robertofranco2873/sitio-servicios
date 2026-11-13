@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#eeeae3"/>
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="none" stroke="#b9b2a5" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="400" y="235" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#1e2d42">Demo Taller</text>
+  <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#5b5852">Captura pendiente: reemplazar por docs/capturas/dashboard.png</text>
+</svg>
